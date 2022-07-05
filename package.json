@@ -1,8 +1,9 @@
 {
-  "name": "tsalias-resolver-esm",
+  "name": "ts-paths-resolver-esm",
   "version": "0.0.2",
   "description": "",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
@@ -15,7 +16,8 @@
     "build:esm": "tsc -p .",
     "build:cjs": "rollup -c rollup.config.js",
     "build": "npm run clean && npm run build:esm && npm run build:cjs",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "lint": "eslint ./src/*.ts"
   },
   "author": "mosle (yskysd@gmail.com)",
   "license": "MIT",

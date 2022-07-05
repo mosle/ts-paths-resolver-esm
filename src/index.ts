@@ -1,2 +1,1 @@
-import { createResolver } from "./createResolver";
-export default { createResolver };
+export { createResolver } from "./createResolver";
